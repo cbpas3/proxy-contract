@@ -1,6 +1,6 @@
 import { ethers, upgrades } from "hardhat";
 
-const PROXY = "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0";
+const PROXY = "0x190393958086740bB0647E284A94F374Ff745aE2";
 
 async function main() {
   const boxV2ContractFactory = await ethers.getContractFactory("BoxV2");

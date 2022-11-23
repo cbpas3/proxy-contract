@@ -15,10 +15,6 @@ async function main() {
   // Part 3: await deploy
   await boxContract.deployed();
   console.log(`Contract deployed to ${boxContract.address}`);
-
-  const boxV2ContractFactory = await ethers.getContractFactory("BoxV2");
-  await upgrades.upgradeProxy(boxContract.address, boxV2ContractFactory);
-  console.log("Box upgraded.");
 }
 
 main().catch((error) => {
